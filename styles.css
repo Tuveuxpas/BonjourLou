@@ -1,41 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
     font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px; /* Espace en haut de la page */
 }
 
 .container {
     display: flex;
     align-items: center;
+    height: 1em; /* Hauteur fixe pour le conteneur */
+    white-space: nowrap; /* Empêche le retour à la ligne */
 }
 
 #text {
-    font-size: 2em;
-    color: #333;
+    font-size: 2.5em;
     white-space: nowrap;
     overflow: hidden;
+    font-weight: 900;
 }
 
 .cursor {
-    font-size: 2em;
-    color: #333;
+    font-size: 2.5em;
     animation: blink 0.7s steps(1) infinite;
 }
 
 #fixedText {
-    font-size: 2em;
-    color: #333;
+    font-size: 2.5em;
     white-space: nowrap;
+    font-weight: 700;
+}
+
+.static-text {
+    margin-top: -15px; /* Espacement entre le texte rotatif et le texte fixe */
+}
+
+.static-text p {
+    font-size: 2.2em;
+    font-weight: 900;
+}
+
+.image{
+    width: 200px;
+    border-radius: 15px;
+}
+
+.styled-button {
+    background-color: #FEA800; /* Vert */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.7em;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #d78f00; /* Vert foncé */
+    transform: scale(1.05);
 }
 
 @keyframes blink {
     50% {
         opacity: 0;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #333;
+    }
+
+    .static-text p{
+        color: #f0f0f0;
+    }
+    #fixedText{
+        color: #f0f0f0;
+    }
+    #text{
+        color: #f0f0f0;
+    }
+    .cursor{
+        color: #f0f0f0;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body{
+        background-color: #fff;
+    }
+
+    .static-text p{
+        color: #333;
+    }
+    #fixedText{
+        color: #333;
+    }
+    #text{
+        color: #333;
+    }
+    .cursor{
+        color: #333;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #text{
+        font-size: 1.5em;
+    }
+    .static-text p{
+        font-size: 1.5em;
+    }
+    #fixedText{
+        font-size: 1.5em;
+    }
+    .cursor{
+        font-size: 1.5em;
+    }
+    .styled-button{
+        font-size: 1.5em;
+        padding: 7px 16px;
     }
 }

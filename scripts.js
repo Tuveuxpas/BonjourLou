@@ -10,7 +10,7 @@ const texts = [
     "좋은 아침이에요", // Coréen
     "おはよう", // Japonais
     "早上好", // Chinois ( simplifié )
-    "早安" // Chinois ( traditionnel )
+    "早安", // Chinois ( traditionnel )
 ];
 
 let currentIndex = 0;

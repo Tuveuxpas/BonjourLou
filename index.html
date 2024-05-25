@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Texte Rotatif</title>
+    <title>Bonjour Lou</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <div class="container">
         <h1 id="text"></h1><span class="cursor" id="cursor">|</span><span id="fixedText"> Lou !</span>
     </div>
+    <div class="static-text">
+        <p>Dites bonjour à Lou !</p>
+    </div>
+    <img src="images/bonjourlou.png" class="image" data-tilt data-tilt-glare data-tilt-scale="1.1" data-tilt-max-glare="0.4">
+    <a href="https://www.snapchat.com/add/louhauwel" target="_blank"><button class="styled-button">Envoyer un message à Lou</button></a>
     <script src="scripts.js"></script>
+    <script src="vanilla-tilt.min.js"></script>
 </body>
 </html>
