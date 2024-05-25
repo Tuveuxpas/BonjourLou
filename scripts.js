@@ -11,6 +11,13 @@ const texts = [
     "おはよう", // Japonais
     "早上好", // Chinois ( simplifié )
     "早安", // Chinois ( traditionnel )
+    "সুপ্রভাত", // Bengali
+    "Buna dimineata", // Roumain
+    "Miremengjes", // Albanais
+    "Բարի առավոտ", // Arménien
+    "Καλημέρα", // Grec
+    "Добрий ранок", // Ukrainien
+    "Dzień dobry" // Polonais
 ];
 
 let currentIndex = 0;
